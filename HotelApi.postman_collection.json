@@ -1,0 +1,185 @@
+{
+	"info": {
+		"_postman_id": "1a94d24a-6c18-425c-99e8-1c6b292d1fd9",
+		"name": "HotelApi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Find the number of vacant rooms",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/HotelService/vacantRooms",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"HotelService",
+						"vacantRooms"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get the customer details for each room",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/HotelService/getCustomerInRoom/101",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"HotelService",
+						"getCustomerInRoom",
+						"101"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all the customers stayed in hotel",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/HotelService/getAllCustomerInHotel",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"HotelService",
+						"getAllCustomerInHotel"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Book the hotel",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \t\"name\":\"sathish\",\r\n\t\"address\":\"no.151, roja nagar\",\r\n \t\"addressProof\":\"PANCARD:1234567\",\r\n \t\"mobile\":\"9994941036\",\r\n \t\"roomNumber\":\"101\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/HotelService/bookRooms",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"HotelService",
+						"bookRooms"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get the available facilities in hotel",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/HotelService/getFacilitiesInRoom/101",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"HotelService",
+						"getFacilitiesInRoom",
+						"101"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get the availability of the room with specific criteria",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/HotelService/getRoomWithFacility/FOOD",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"HotelService",
+						"getRoomWithFacility",
+						"FOOD"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get the price details for room with specification",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/HotelService/getRoomPriceWithFacility/FOOD",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"HotelService",
+						"getRoomPriceWithFacility",
+						"FOOD"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Export the customer details as printable reports",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/HotelService/generateCustomersRecord",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"HotelService",
+						"generateCustomersRecord"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
