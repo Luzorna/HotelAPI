@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="HotelServiceImplTest" project="hotelAPI" tests="5" started="5" failures="0" errors="0" ignored="0">
+  <testsuite name="com.hotel.test.hotelAPI.HotelServiceImplTest" time="0.0">
+    <testcase name="getFacilityDetailsTest" classname="com.hotel.test.hotelAPI.HotelServiceImplTest" time="0.0"/>
+    <testcase name="getCustomerDetailsTest" classname="com.hotel.test.hotelAPI.HotelServiceImplTest" time="0.0"/>
+    <testcase name="getVacantRoomsTest" classname="com.hotel.test.hotelAPI.HotelServiceImplTest" time="0.0"/>
+    <testcase name="getAllCustomerDetailsTest" classname="com.hotel.test.hotelAPI.HotelServiceImplTest" time="0.0"/>
+    <testcase name="getRoomWithFacilityTest" classname="com.hotel.test.hotelAPI.HotelServiceImplTest" time="0.0"/>
+  </testsuite>
+</testrun>
